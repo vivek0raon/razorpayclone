@@ -637,7 +637,7 @@
 
     <!-- feature section 2  -->
     <section
-      class="bg-[url(./Images/feature-section-2BG.svg)] bg-no-repeat bg-cover pt-[20rem] pb-[500px] mt-14"
+      class="bg-[url(./Images/feature-section-2BG.svg)] bg-no-repeat bg-cover pt-[20rem] pb-[500px] mt-14 overflow-hidden"
     >
       <div class="relative w-10/12 max-w-[1080px] pt-4 mx-auto">
         <h1
@@ -697,9 +697,9 @@
                   <span>View finance insights at a galance</span>
                 </li>
               </ul>
-              <div class="flex flex-row w-full items-center space-x-4">
+              <div class="flex flex-col-reverse md:flex-row w-full items-center space-x-4">
                 <button
-                  class="text-white font-bold font-mullish bg-lightBlue flex items-center justify-center py-[14px] px-[18px] md:pr-[90px] rounded-md relative hover:bg-lightBlue500 transition-all duration-200"
+                  class="self-stretch md:w-fit text-white font-bold font-mullish bg-lightBlue flex items-center justify-center py-[14px] px-[18px] md:pr-[90px] rounded-md relative hover:bg-lightBlue500 transition-all duration-200"
                 >
                   Sign Up
                   <div
@@ -718,7 +718,7 @@
                   </div>
                 </button>
                 <div
-                  class="flex max-w-[600px] md:flex-row cursor-pointer items-center group"
+                  class="self-start flex max-w-[600px] cursor-pointer items-center group"
                 >
                   <a
                     href="#"
@@ -740,7 +740,7 @@
           </div>
 
           <!--Card box-->
-          <div class="grid grid-cols-3 w-full gap-4 my-14">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4 my-14">
             <div class="w-full min-h-[15rem] relative cursor-pointer">
               <img
                 src="./Images/payment-link-icon.svg"
@@ -917,7 +917,7 @@
             </div>
           </div>
           <div
-            class="w-full bg-[#181c2e] border rounded-md border-slate-600 items-center flex justify-evenly mb-24 gap-y-6 relative p-8"
+            class="hidden md:block md:flex-col lg:flex-row w-full bg-[#181c2e] border rounded-md border-slate-600 items-center lg:flex justify-evenly mb-24 gap-y-6 relative p-8"
           >
             <h3 class="font-mullish text-xl text-white">
               Check out the live demo to learn how RazorpayX works.
@@ -950,7 +950,7 @@
     </section>
 
     <!--section 3-->
-    <section class="relative bg-white">
+    <section class="relative bg-white overflow-hidden">
       <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
         <img
           src="./Images/feature-section1-dottedrows.png"
@@ -964,7 +964,7 @@
           class="absolute w-[233px] -right-[3.5rem] -top-[6rem] z-10"
         />
         <div
-          class="w-full grid grid-cols-3 gap-y-10 gap-x-4 mt-5 mb-20 relative z-[100]"
+          class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-4 mt-5 mb-20 relative z-[100]"
         >
           <div class="relative flex items-center p-3 z-[0]">
             <h1
@@ -1127,7 +1127,7 @@
           Empowers you bussiness with all the right tools to accept online
           payments and provide the best customer Experience
         </p>
-        <div class="grid grid-cols-4 relative pt-4 gap-[2rem] mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-3  lg:grid-cols-4 relative pt-4 gap-[2rem] mt-8">
           <div class="flex flex-col">
             <img
               src="./Images/instant-activation-icon.svg"
@@ -1246,10 +1246,10 @@
 
     <!--Section 5-->
     <section class="relative bg-[#f5f8fe] -z-[100] pt-40 pb-12 -mt-[200px]">
-      <div class="mx-auto flex w-11/12 max-w-[1080px] relative pt-4">
-        <div class="w-1 h-8 bg-red-600 absolute top-0 left-1"></div>
+      <div class="mx-auto flex flex-col md:flex-row w-11/12 max-w-[1080px] relative pt-4">
+        <div class="hidden lg:block w-1 h-8 bg-red-600 absolute top-0 left-1"></div>
         <div
-          class="flex flex-col justify-center w-full max-w-[calc(100%-500px)]"
+          class="flex flex-col justify-center w-full lg:max-w-[calc(100%-500px)]"
         >
           <h1 class="font-bold text-2xl font-mullish text-deepBlueHead">
             Join the 50,00,000+ business using Razorpay
@@ -1266,7 +1266,7 @@
             for you
           </p>
         </div>
-        <div class="h-[500px] w-[500px] relative overflow-y-hidden">
+        <div class="h-[300px] w-[300px] md:h-[500px] md:w-[500px] relative mx-auto overflow-y-hidden">
           <div
             style="background: linear-gradient(180deg, #f4f8ff, #fff0)"
             class="absolute w-full h-[150px] top-0 z-[50]"
@@ -1274,8 +1274,7 @@
           <img
             src="./Images/comanies.png"
             alt=""
-            width="500px"
-            class="absolute companiesList"
+            class="absolute companiesList w-full md:w-[500px]"
           />
           <div
             style="background: linear-gradient(0deg, #f4f8ff, #fff0)"
@@ -1315,7 +1314,7 @@
             </div>
           </button>
           <div
-            class="flex flex-row max-w-[960px] items-center mx-auto my-16 gap-x-[10rem]"
+            class="flex flex-col xl:flex-row max-w-[960px] items-center mx-auto my-16 gap-x-[10rem]"
           >
             <img
               src="./Images/testimonial.jpg"
@@ -1376,7 +1375,7 @@
 
     <!--Section 7-->
     <section
-      class="relative min-h-[510px] mt-4 bg-[url(/Images/CTABg.svg)] w-full h-full bg-no-repeat bg-cover ctaSection bg-[#edf8ff]"
+      class="relative min-h-[510px] mt-4 bg-[url(/Images/CTABg.svg)] w-full h-full bg-no-repeat bg-cover  bg-[#edf8ff] sm:bg-[length:250%_250%] md:bg-[length:100%_100%]"
     >
       <div
         class="pt-20 mx-auto w-11/12 max-w-[1080px] relative justify-between space-x-20 flex"
@@ -1424,7 +1423,7 @@
             alt=""
             width="240px"
             height="282px"
-            class="mt-16 pt-3"
+            class="mt-16 pt-3 hidden lg:block"
           />
         </div>
       </div>
@@ -1432,11 +1431,11 @@
 
     <!--At last ha ha-->
 
-    <section class="relative bg-[#edf8ff]">
+    <section class="pt-5 relative bg-[#edf8ff]">
       <div
-        class="gap-6 flex w-11/12 max-w-[1080px] h-[1080px] mx-auto relative"
+        class="gap-6 flex flex-col md:flex-row w-11/12 max-w-[1080px] h-[1080px] mx-auto relative"
       >
-        <div class="h-full w-[25%] flex flex-col gap-4">
+        <div class="h-full w-full md:w-[25%] flex flex-col gap-4">
           <img
             src="./Images/logo-dark.svg"
             alt=""
@@ -1487,7 +1486,7 @@
             <img src="./Images/image.png" width="100px" height="10px" alt="" />
           </div>
         </div>
-        <div class="h-full w-[25%] flex flex-col gap-5">
+        <div class="h-full w-full md:w-[25%] flex flex-col gap-5">
           <div class="flex flex-col gap-1">
             <h1 class="font-mullish text-l font-bold text-slate-600">
               BANKING PLUS
@@ -1556,7 +1555,7 @@
           </div>
         </div>
 
-        <div class="h-full w-[25%] flex flex-col gap-5">
+        <div class="h-full w-full md:w-[25%] flex flex-col gap-5">
           <div class="flex flex-col gap-1">
             <h1 class="font-mullish text-l font-bold text-slate-600">
               BANKING PLUS
@@ -1624,7 +1623,7 @@
             </div>
           </div>
         </div>
-        <div class="h-full w-[25%] flex flex-col gap-5">
+        <div class="h-full w-full  md:w-[25%] flex flex-col gap-5">
           <div class="flex flex-col gap-1">
             <h1 class="font-mullish text-l font-bold text-slate-600">
               BANKING PLUS
